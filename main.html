@@ -15,17 +15,18 @@
 
 		<div>
 			<lable for="name" id="name">Name</lable>
-			<input type="text" name= "name" required>
+			<input type="text" name= "name" minlength="3" maxlength="50"required>
              <br>
 			<lable for="portfolio" id="portfolio">Portfolio</lable>
-			<input type="text" name= "portfolio" required>
+			<input type="text" name= "portfolio" url required>
 			<br>
 			<lable for="favcolor" id="favcolor">Fav Color</lable>
-			<input type="color" name= "">favcolor
+			<input type="color" name= "fav color" value="#ff0000">
 			<br>
 			<lable for="likeness" id="likeness">Likeness</lable>
-			<input type="range" name= "likeness">
-			
+			<input type="range" name= "likeness" min="1" max="100">
+			<br>
+			<button type="submit">Submit</button>
 
 			
 		</div>
