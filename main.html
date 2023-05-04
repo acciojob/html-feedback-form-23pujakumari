@@ -10,29 +10,28 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<form>
-		<h1>Feedback Form</h1>
-
+	<h1>Feedback Form</h1>
+	<form action="#" method="post">
+	<div>
+	<label for="name">Name </label>
+	<input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+	</div>
 		<div>
-			<lable for="name" id="name">Name</lable>
-			<input type="text" name= "name" minlength="3" maxlength="50"required>
-             <br>
-			<lable for="portfolio" id="portfolio">Portfolio</lable>
-			<input type="text" name= "portfolio" url required>
-			<br>
-			<lable for="favcolor" id="favcolor">Fav Color</lable>
-			<input type="color" name= "fav color" value="#ff0000">
-			<br>
-			<lable for="likeness" id="likeness">Likeness</lable>
-			<input type="range" name= "likeness" min="1" max="100">
-			<br>
-			<button type="submit">Submit</button>
-
-			
+			<label for="portfolio"> Portfolio</label>
+			<input type="url" id="portfolio"  required>
 		</div>
-		
+		<div>
+			<label for="favColor">Select Favourite color:</label>
+			<input type="color" id="favColor" >
+		</div>
+		<div>
+			<label for="likeness"> Likeness</label>
+			<input type="range" id ="likeness"  min="1" max="100" required>
+		</div>
+		<div>
+			<button type="submit" value="submit" id="submit">submit </button> 
+		</div>
 	</form>
-
 </body>
 
 </html>
